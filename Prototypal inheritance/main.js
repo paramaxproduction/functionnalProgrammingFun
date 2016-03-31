@@ -1,5 +1,5 @@
 //Constructor with prototype inheritance
-
+/*
 function Dog(name, breed, weight) {
   this.name = name;
   this.breed = breed;
@@ -20,6 +20,15 @@ Dog.prototype.run = function() {
 Dog.prototype.wag = function() {
   console.log("Wag!");
 };
+Dog.prototype.sitting = false;
+Dog.prototype.sit = function() {
+  if (this.sitting) {
+    console.log(this.name + " is already sitting");
+  } else {
+    this.sitting = true;
+    console.log(this.name + " is now sitting");
+  }
+};
 
 var fido = new Dog("Fido", "Mixed", 38);
 var fluffy = new Dog("Fluffy", "Poodle", 30);
@@ -30,7 +39,7 @@ spot.bark = function() {
   console.log(this.name + " says WOOF!");
 };
 */
-
+/*
 fido.bark();
 fido.run();
 fido.wag();
@@ -42,3 +51,6 @@ fluffy.wag();
 spot.bark();
 spot.run();
 spot.wag();
+spot.sit();
+spot.sit();
+*/
