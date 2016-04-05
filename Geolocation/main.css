@@ -1,0 +1,9 @@
+#map {
+  height: 400px;
+  width: 400px;
+  border: 1px solid black;
+}
+
+.row {
+  margin-left: 5px;
+}
